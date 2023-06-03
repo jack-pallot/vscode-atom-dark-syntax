@@ -27,10 +27,9 @@
 			}
 		},
 		{
-			"name": "Entity | Support Constant | Selector CSS Punctuation",
+			"name": "Entity | Selector CSS Punctuation",
 			"scope": [
 				"entity",
-				"support.constant",
 				"meta.selector.css entity.other.attribute-name punctuation"
 			],
 			"settings": {
@@ -104,8 +103,11 @@
 			}
 		},
 		{
-			"name": "Constant",
-			"scope": "constant",
+			"name": "Constant | Support Constant",
+			"scope": [
+				"constant",
+				"support.constant"
+			],
 			"settings": {
 				"foreground": "#99CC99"
 			}

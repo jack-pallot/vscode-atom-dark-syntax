@@ -20,8 +20,11 @@
 			}
 		},
 		{
-			"name": "Comment",
-			"scope": "comment",
+			"name": "Comment | Ignore",
+			"scope": [
+				"comment",
+				"source.ignore"
+			],
 			"settings": {
 				"foreground": "#7C7C7C"
 			}
@@ -37,16 +40,25 @@
 			}
 		},
 		{
-			"name": "Entity Name Type",
-			"scope": "entity.name.type",
+			"name": "Entity Name Type Class & Struct",
+			"scope": [
+				"entity.name.type.class",
+				"entity.name.type.struct"
+			],
 			"settings": {
 				"foreground": "#FFFFB6",
 				"fontStyle": "underline"
 			}
 		},
 		{
-			"name": "Support",
-			"scope": "support",
+			"name": "Support | Entity Name | Type Name",
+			"scope": [
+				"support",
+				"entity.name.type",
+				"storage.type.object",
+				"storage.type.generic",
+				"storage.type.java"
+			],
 			"settings": {
 				"foreground": "#FFFFB6"
 			}
@@ -87,6 +99,7 @@
 			"name": "Keyword Operator | String Source, Source String Meta Embedded | Support Type Property-Name CSS",
 			"scope": [
 				"keyword.operator",
+				"punctuation.separator",
 				"source string source",
 				"source string meta.embedded.line",
 				"support.type.property-name.css"
@@ -96,8 +109,13 @@
 			}
 		},
 		{
-			"name": "Storage",
-			"scope": "storage",
+			"name": "Storage | Primitives",
+			"scope": [
+				"storage",
+				"keyword.type",
+				"entity.name.type.primitive",
+				"entity.name.type.numeric"
+			],
 			"settings": {
 				"foreground": "#CFCB90"
 			}
@@ -106,7 +124,7 @@
 			"name": "Constant | Support Constant",
 			"scope": [
 				"constant",
-				"support.constant"
+				"support.constant",
 			],
 			"settings": {
 				"foreground": "#99CC99"
@@ -224,7 +242,9 @@
 		},
 		{
 			"name": "C Preprocessor",
-			"scope": "meta.preprocessor.c",
+			"scope": [
+				"entity.name.function.preprocessor"
+			],
 			"settings": {
 				"foreground": "#8996A8"
 			}

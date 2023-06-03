@@ -23,7 +23,8 @@
 				"meta.tag.inline",
 				"meta.tag.inline .entity",
 				"meta.tag",
-				"meta.tag .entity"
+				"meta.tag .entity",
+				"markup.heading"
 			],
 			"settings": {
 				"foreground": "#96CBFE"
@@ -68,25 +69,39 @@
 			}
 		},
 		{
-			"name": "Keyword Operator | String Source, Source String Meta Embedded | Support Type Property-Name CSS",
+			"name": "Keyword Operator | String Source, Source String Meta Embedded | Support Type Property-Name CSS | Markup List",
 			"scope": [
 				"keyword.operator",
 				"punctuation.separator",
 				"source string source",
 				"source string meta.embedded.line",
-				"support.type.property-name.css"
+				"support.type.property-name.css",
+				"markup.list",
 			],
 			"settings": {
 				"foreground": "#EDEDED"
 			}
 		},
 		{
-			"name": "Storage | Primitives",
+			"name": "Markup Bold | Markup Quote Begin",
+			"scope": [
+				"markup.bold",
+				"punctuation.definition.quote.begin",
+				"meta.separator"
+			],
+			"settings": {
+				"foreground": "#EDEDED",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Storage | Primitives | Markup Fence Code Block Language",
 			"scope": [
 				"storage",
 				"keyword.type",
 				"entity.name.type.primitive",
-				"entity.name.type.numeric"
+				"entity.name.type.numeric",
+				"fenced_code.block.language"
 			],
 			"settings": {
 				"foreground": "#CFCB90"
@@ -115,29 +130,40 @@
 			}
 		},
 		{
-			"name": "Constant | Support Constant",
+			"name": "Constant | Support Constant | Markup Inline",
 			"scope": [
 				"constant",
 				"support.constant",
+				"markup.inline"
 			],
 			"settings": {
 				"foreground": "#99CC99"
 			}
 		},
 		{
-			"name": "Comment | Ignore",
+			"name": "Comment | Ignore | Markup Fence",
 			"scope": [
 				"comment",
-				"source.ignore"
+				"source.ignore",
+				"markup.fenced_code"
 			],
 			"settings": {
 				"foreground": "#7C7C7C"
 			}
 		},
 		{
+			"name": "Markup Strikethrough",
+			"scope": "markup.strikethrough",
+			"settings": {
+				"foreground": "#7C7C7C",
+				"fontStyle": "strikethrough"
+			}
+		},
+		{
 			"name": "Entity | Selector CSS Punctuation",
 			"scope": [
 				"entity",
+				"entity.name.section",
 				"meta.selector.css entity.other.attribute-name punctuation"
 			],
 			"settings": {
@@ -210,8 +236,11 @@
 			}
 		},
 		{
-			"name": "Invisible",
-			"scope": "invisible",
+			"name": "Invisible | Markup Fenced Code",
+			"scope": [
+				"invisible",
+				"markup.fenced_code.block"
+			],
 			"settings": {
 				"foreground": "#C5C8C6"
 			}
@@ -239,15 +268,23 @@
 			}
 		},
 		{
-			"name": "Variable",
-			"scope": "variable",
+			"name": "Variable | Markup Quote",
+			"scope": [
+				"variable",
+				"markup.quote"
+			],
 			"settings": {
 				"foreground": "#C6C5FE"
 			}
 		},
 		{
-			"name": "String",
-			"scope": "string",
+			"name": "String | Link Title & Reference",
+			"scope": [
+				"string",
+				"string.other.link.title",
+				"string.other.link.description",
+				"constant.other.reference.link"
+			],
 			"settings": {
 				"foreground": "#A8FF60"
 			}
@@ -295,12 +332,22 @@
 			}
 		},
 		{
-			"name": "C Preprocessor",
+			"name": "C Preprocessor | Links",
 			"scope": [
-				"entity.name.function.preprocessor"
+				"entity.name.function.preprocessor",
+				"meta.link",
+				"markup.underline.link"
 			],
 			"settings": {
 				"foreground": "#8996A8"
+			}
+		},
+		{
+			"name": "Marukup Italics",
+			"scope": "markup.italic",
+			"settings": {
+				"foreground": "#8996A8",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -336,13 +383,6 @@
 			"scope": "meta.preprocessor.at-rule keyword.control.at-rule",
 			"settings": {
 				"foreground": "#8693A5"
-			}
-		},
-		{
-			"name": "Meta Separator",
-			"scope": "meta.separator",
-			"settings": {
-				"foreground": "#60A633",
 			}
 		},
 		{

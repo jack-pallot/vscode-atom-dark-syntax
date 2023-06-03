@@ -123,7 +123,6 @@
 			"scope": "invalid.illegal",
 			"settings": {
 				"foreground": "#FD5FF1",
-				"background": "#A95AA9"
 			}
 		},
 		{
@@ -131,7 +130,6 @@
 			"scope": "invalid.illegal",
 			"settings": {
 				"foreground": "#FD5FF1",
-				"background": "#A95AA9"
 			}
 		},
 		{
@@ -195,7 +193,6 @@
 			"scope": "string.regexp.group",
 			"settings": {
 				"foreground": "#C6A24F",
-				"background": "#595f65"
 			}
 		},
 		{
@@ -392,7 +389,6 @@
 			],
 			"settings": {
 				"foreground": "#F8F8F8",
-				"background": "#0E2231"
 			}
 		},
 		{
@@ -400,7 +396,6 @@
 			"scope": "meta.separator",
 			"settings": {
 				"foreground": "#60A633",
-				"background": "#242424"
 			}
 		},
 		{

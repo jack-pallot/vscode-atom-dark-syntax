@@ -1,28 +1,22 @@
 {
 	"type": "dark",
 	"colors": {
-		"editor.background": "#1d1f21",
-		"editor.foreground": "#c5c8c6",
+		"editor.background": "#1D1F21",
+		"editor.foreground": "#C5C8C6",
 		"editor.selectionBackground": "#444444",
-		"editor.lineHighlightBackground": "#3a3a3a",
-		"editorCursor.foreground": "#a5a2a2",
-		"editorWhitespace.foreground": "#c5c8c6",
+		"editor.lineHighlightBackground": "#3A3A3A",
+		"editorCursor.foreground": "#A5A2A2",
+		"editorWhitespace.foreground": "#C5C8C6",
 		"editorIndentGuide.background": "#474747",
-		"statusBar.background": "#3382c7",
-		"activityBarBadge.background": "#60a633"
+		"statusBar.background": "#3382C7",
+		"activityBarBadge.background": "#60A633"
 	},
 	"tokenColors": [
-		{
-			"settings": {
-				"foreground": "#c5c8c6ff",
-				"background": "#1d1f21ff"
-			}
-		},
 		{
 			"name": "Invisible",
 			"scope": "invisible",
 			"settings": {
-				"foreground": "#c5c8c6"
+				"foreground": "#C5C8C6"
 			}
 		},
 		{
@@ -401,25 +395,25 @@
 		{
 			"scope": "token.info-token",
 			"settings": {
-				"foreground": "#6796e6"
+				"foreground": "#6796E6"
 			}
 		},
 		{
 			"scope": "token.warn-token",
 			"settings": {
-				"foreground": "#cd9731"
+				"foreground": "#CD9731"
 			}
 		},
 		{
 			"scope": "token.error-token",
 			"settings": {
-				"foreground": "#f44747"
+				"foreground": "#F44747"
 			}
 		},
 		{
 			"scope": "token.debug-token",
 			"settings": {
-				"foreground": "#b267e6"
+				"foreground": "#B267E6"
 			}
 		}
 	]

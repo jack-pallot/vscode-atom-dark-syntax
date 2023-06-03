@@ -17,6 +17,8 @@
 			"scope": [
 				"keyword",
 				"keyword.control",
+				"keyword.operator.new",
+				"storage.type.class",
 				"storage.modifier",
 				"source .entity.name.tag",
 				"source .entity.other.attribute-name",
@@ -31,21 +33,14 @@
 			}
 		},
 		{
-			"name": "Entity Name Type Class & Struct",
-			"scope": [
-				"entity.name.type.class",
-				"entity.name.type.struct"
-			],
-			"settings": {
-				"foreground": "#FFFFB6",
-				"fontStyle": "underline"
-			}
-		},
-		{
-			"name": "Support | Entity Name | Type Name",
+			"name": "Support | Entity Name | Type Name | Type Storage",
 			"scope": [
 				"support",
 				"entity.name.type",
+				"entity.name.namespace",
+				"entity.name.scope-resolution",
+				"storage.modifier.import",
+				"storage.modifier.package",
 				"storage.type.object",
 				"storage.type.generic",
 				"storage.type.java"
@@ -55,17 +50,14 @@
 			}
 		},
 		{
-			"name": "Doctype",
+			"name": "Entity Name Type Class & Struct",
 			"scope": [
-				"meta.sgml.html meta.doctype",
-				".meta.sgml.html meta.doctype entity",
-				"meta.sgml.html meta.doctype string",
-				"meta.xml-processing",
-				"meta.xml-processing entity",
-				"meta.xml-processing string"
+				"entity.name.type.class",
+				"entity.name.type.struct"
 			],
 			"settings": {
-				"foreground": "#494949"
+				"foreground": "#FFFFB6",
+				"fontStyle": "underline"
 			}
 		},
 		{
@@ -83,9 +75,10 @@
 			}
 		},
 		{
-			"name": "Markup Bold | Markup Quote Begin",
+			"name": "Markup Bold | Markup List Begin | Markup Quote Begin",
 			"scope": [
 				"markup.bold",
+				"punctuation.definition.list.begin",
 				"punctuation.definition.quote.begin",
 				"meta.separator"
 			],
@@ -95,16 +88,81 @@
 			}
 		},
 		{
-			"name": "Storage | Primitives | Markup Fence Code Block Language",
+			"name": "Doctype",
+			"scope": [
+				"meta.sgml.html meta.doctype",
+				".meta.sgml.html meta.doctype entity",
+				"meta.sgml.html meta.doctype string",
+				"meta.xml-processing",
+				"meta.xml-processing entity",
+				"meta.xml-processing string"
+			],
+			"settings": {
+				"foreground": "#494949"
+			}
+		},
+		{
+			"name": "Function Storage | Primitives | Markup Fence Code Block Language",
 			"scope": [
 				"storage",
 				"keyword.type",
+				"keyword.other.fn",
 				"entity.name.type.primitive",
 				"entity.name.type.numeric",
 				"fenced_code.block.language"
 			],
 			"settings": {
 				"foreground": "#CFCB90"
+			}
+		},
+		{
+			"name": "Comment | Ignore | Markup Fence",
+			"scope": [
+				"comment",
+				"source.ignore",
+				"markup.fenced_code"
+			],
+			"settings": {
+				"foreground": "#7C7C7C"
+			}
+		},
+		{
+			"name": "Markup Strikethrough",
+			"scope": "markup.strikethrough",
+			"settings": {
+				"foreground": "#7C7C7C",
+				"fontStyle": "strikethrough"
+			}
+		},
+		{
+			"name": "String | Link Title & Reference",
+			"scope": [
+				"string",
+				"string.other.link.title",
+				"string.other.link.description",
+				"constant.other.reference.link"
+			],
+			"settings": {
+				"foreground": "#A8FF60"
+			}
+		},
+		{
+			"name": "C Preprocessor | Links",
+			"scope": [
+				"entity.name.function.preprocessor",
+				"meta.link",
+				"markup.underline.link"
+			],
+			"settings": {
+				"foreground": "#8996A8"
+			}
+		},
+		{
+			"name": "Marukup Italics",
+			"scope": "markup.italic",
+			"settings": {
+				"foreground": "#8996A8",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -138,25 +196,6 @@
 			],
 			"settings": {
 				"foreground": "#99CC99"
-			}
-		},
-		{
-			"name": "Comment | Ignore | Markup Fence",
-			"scope": [
-				"comment",
-				"source.ignore",
-				"markup.fenced_code"
-			],
-			"settings": {
-				"foreground": "#7C7C7C"
-			}
-		},
-		{
-			"name": "Markup Strikethrough",
-			"scope": "markup.strikethrough",
-			"settings": {
-				"foreground": "#7C7C7C",
-				"fontStyle": "strikethrough"
 			}
 		},
 		{
@@ -246,6 +285,16 @@
 			}
 		},
 		{
+			"name": "Variable | Markup Quote",
+			"scope": [
+				"variable",
+				"markup.quote"
+			],
+			"settings": {
+				"foreground": "#C6C5FE"
+			}
+		},
+		{
 			"name": "Entity Inherited Class",
 			"scope": "entity.other.inherited-class",
 			"settings": {
@@ -265,28 +314,6 @@
 			"scope": "constant.numeric",
 			"settings": {
 				"foreground": "#FF73FD"
-			}
-		},
-		{
-			"name": "Variable | Markup Quote",
-			"scope": [
-				"variable",
-				"markup.quote"
-			],
-			"settings": {
-				"foreground": "#C6C5FE"
-			}
-		},
-		{
-			"name": "String | Link Title & Reference",
-			"scope": [
-				"string",
-				"string.other.link.title",
-				"string.other.link.description",
-				"constant.other.reference.link"
-			],
-			"settings": {
-				"foreground": "#A8FF60"
 			}
 		},
 		{
@@ -329,25 +356,6 @@
 			"scope": "entity.other.attribute-name",
 			"settings": {
 				"foreground": "#FFD7B1"
-			}
-		},
-		{
-			"name": "C Preprocessor | Links",
-			"scope": [
-				"entity.name.function.preprocessor",
-				"meta.link",
-				"markup.underline.link"
-			],
-			"settings": {
-				"foreground": "#8996A8"
-			}
-		},
-		{
-			"name": "Marukup Italics",
-			"scope": "markup.italic",
-			"settings": {
-				"foreground": "#8996A8",
-				"fontStyle": "italic"
 			}
 		},
 		{
